@@ -1,5 +1,12 @@
 // components/HeroBanner.jsx
 import Image from "next/image";
+import { Original_Surfer } from "next/font/google";
+ 
+const surfer = Original_Surfer({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-surfer',
+});
 
 export default function HeroBanner() {
     return (
@@ -20,8 +27,8 @@ export default function HeroBanner() {
             <div className="relative z-10 flex flex-row md:flex-row items-center h-full ">
                 {/* Left text */}
                 <div className="flex-1 pl-5 lg:pl-15 text-left text-white flex flex-col justify-center h-full">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-shadow-2xs bg-gradient-to-r from-[#48897e] via-white to-pink-600 bg-clip-text text-transparent">
-                        Making Every Moment Unforgettable
+                    <h1 className='text-4xl  md:text-6xl font-bold mb-4 text-shadow-2xs bg-gradient-to-r from-white via-white to-pink-600 bg-clip-text text-transparent'>
+                       <span className={surfer.className}>Making Every Moment Unforgettable</span> 
                     </h1>
                     <p className="text-lg md:text-2xl text-white/90">
                         We turn your special days into timeless stories.
@@ -38,7 +45,7 @@ export default function HeroBanner() {
                         className="object-cover rounded-lg shadow-lg"
                     />
                     {/* Bottom-right image */}
-                    <div className="absolute bottom-0 right-0 w-[100px] md:w-[120px] h-[100px] md:h-[120px]">
+                    <div className="absolute bottom-0 right-0 w-[120px] md:w-[250px] h-[120px] md:h-[200px]">
                         <Image
                             src="/assests/banner-3.jpg"
                             alt="Secondary"

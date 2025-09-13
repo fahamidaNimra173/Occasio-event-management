@@ -1,6 +1,12 @@
 // components/Footer.jsx
 import Link from "next/link";
+import { Josefin_Sans } from "next/font/google";
 
+
+const josefin = Josefin_Sans({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 export default function Footer() {
   const links = [
     { name: "Home", href: "/" },
@@ -10,12 +16,12 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#ecafaf] dark:bg-[#a46060] text-gray-100 mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+    <footer className={`bg-[#ecafaf] ${josefin.className} dark:bg-[#a46060] text-white mt-16`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-25 flex flex-col md:flex-row justify-between items-start md:items-center">
         {/* Left Side */}
         <div className="mb-6 md:mb-0">
-          <h2 className="text-2xl font-bold text-indigo-500">Occasio</h2>
-          <p className="mt-2 text-gray-300">Chittagong, Lalkhan Bazar</p>
+          <h2 className="text-4xl font-extrabold ">Occasio</h2>
+          <p className="mt-2 ">Chittagong, Lalkhan Bazar</p>
         </div>
 
         {/* Right Side Links */}
