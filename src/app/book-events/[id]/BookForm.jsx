@@ -95,3 +95,9 @@ export default function BookForm({ event }) {
     </form>
   );
 }
+// app
+//   (auth)
+//     └─ login
+//     │   └─ page.jsx
+//     └─ register
+//         └─ page.jsx

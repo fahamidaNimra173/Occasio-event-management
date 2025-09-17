@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Event Management Platform
 
-## Getting Started
+## Project Description
+This is a modern Event Management platform built with Next.js. Users can browse events, view event details, book events, and manage their accounts. The application includes authentication with JWT, a responsive design, and a smooth user experience. Admin functionality can be extended to manage events and bookings.
 
-First, run the development server:
+---
 
+## Tech Stack
+- **Frontend & Backend:** Next.js 13 (App Router)  
+- **Database:** MongoDB (Atlas)  
+- **Authentication:** JWT (Email & Password)  
+- **Styling:** Tailwind CSS, DaisyUI  
+- **Icons:** React Icons  
+- **HTTP Requests:** Fetch API  
+- **Version Control:** Git  
+
+---
+
+## Features
+- User registration and login with JWT authentication  
+- Browse all events  
+- View detailed event information  
+- Book events (with date, location, number of people)  
+- Conditional navigation: login/register or logout button  
+- Responsive design for mobile and desktop  
+- Secure authentication with JWT tokens stored in localStorage  
+
+---
+
+## Setup Instructions
+
+### 1. Clone the repository
 ```bash
+1.
+git clone <repository-url>
+cd <project-folder>
+
+
+
+2. Install dependencies
+npm install
+
+3. Configure environment variables
+
+Create a .env.local file in the root directory:
+
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_64_character_secret_key
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
