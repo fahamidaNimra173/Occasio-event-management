@@ -9,7 +9,7 @@ This is a modern Event Management platform built with Next.js. Users can browse 
 - **Frontend & Backend:** Next.js 13 (App Router)  
 - **Database:** MongoDB (Atlas)  
 - **Authentication:** JWT (Email & Password)  
-- **Styling:** Tailwind CSS, DaisyUI  
+- **Styling:** Tailwind CSS,ant design,meterial ui,
 - **Icons:** React Icons  
 - **HTTP Requests:** Fetch API  
 - **Version Control:** Git  

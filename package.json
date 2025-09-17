@@ -9,7 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.2",
+    "@mui/material": "^7.3.2",
+    "antd": "^5.27.4",
     "bcryptjs": "^3.0.2",
+    "framer-motion": "^12.23.13",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.19.0",
     "next": "15.5.3",

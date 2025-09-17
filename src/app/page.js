@@ -14,10 +14,13 @@ export default async function Home() {
   return (
    <div >
       <HeroBanner></HeroBanner>
-      <Gallery></Gallery>
+      
       <div className="max-w-5/6 mx-auto">
+      
+      <h1 classname='md:text-4xl text-2xl text-black dark:text-white mx-auto my-5 '>Some of our recent events</h1>
              <EventList  events={eventsData}></EventList>
       </div>
+      <Gallery></Gallery>
    
      
 
